@@ -2,7 +2,7 @@ import './Navbar.css'
 
 const Navbar = () => {
   return (
-    <nav className='navbar'>
+    <nav className='navbar' role='navigation'>
       <div className='navbar-left'>
         <a href='/' className='logo'>
           Shop Now
@@ -22,11 +22,11 @@ const Navbar = () => {
         </ul>
       </div>
       <div className='navbar-right'>
-        <a href='/cart' className='cart-icon'>
+        <a href='/cart' className='cart-icon' aria-label='Shopping Cart'>
           <i className='fas fa-shopping-cart'></i>
           <span className='cart-count'>0</span>
         </a>
-        <a href='/account' className='user-icon'>
+        <a href='/account' className='user-icon' aria-label='User Account'>
           <i className='fas fa-user'></i>
         </a>
       </div>
